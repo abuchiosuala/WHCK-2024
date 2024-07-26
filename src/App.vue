@@ -305,6 +305,7 @@ span {
   height: auto;
 }
 
+
 .notWorking {
   margin: 5px;
 }
@@ -336,9 +337,16 @@ main {
   }
 
   .typewriter {
-    display: none;
+    font-size: 1em; /* Reduce font size for small screens */
+    animation: typewriter-small 2s steps(21) 1s forwards, blink 0.5s steps(1) infinite;
+    margin-bottom: 5px;
   }
 
+  @keyframes typewriter-small {
+    to { width: 96%; } /* Ensure the text fits within the screen */
+  }
+
+  
   .custom-table {
     font-size: 12px;
   }
