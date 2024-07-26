@@ -152,7 +152,10 @@ import { ref } from "vue";
 </template>
 
 <style scoped>
-
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
 
 .custom-table {
   width: 100%;
@@ -228,7 +231,7 @@ import { ref } from "vue";
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .card {
@@ -336,7 +339,20 @@ main {
     display: none;
   }
 
+  .custom-table {
+    font-size: 12px;
+  }
 
+  .table-header, .custom-table th, .custom-table td {
+    padding: 2px 4px;
+  }
+
+  .custom-table td {
+    white-space: normal; 
+    word-wrap: break-word;
+    margin: 0; /* Removed margin */
+    padding: 4px 8px;
+  }
 }
 
 /* Small Devices (Phones) */
