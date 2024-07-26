@@ -147,7 +147,7 @@ import { ref } from "vue";
       </div>
     </v-main>
 
-    <v-footer style="background-color: steelblue; color: white;">© 2024</v-footer>
+    <v-footer style="background-color: steelblue; color: white;">© 2024 Made with love by the #whck-radio team</v-footer>
   </v-app>
 </template>
 
